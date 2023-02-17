@@ -9,18 +9,23 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+
+
 function getCurrentUIValues() {
   return {
     amount: +(document.getElementById("loan-amount").value),
     years: +(document.getElementById("loan-years").value),
     rate: +(document.getElementById("loan-rate").value),
-  }
+  };
 }
 
 // Get the inputs from the DOM.
 // Put some default values in the inputs
 // Call a function to calculate the current monthly payment
 function setupIntialValues() {
+    const amount = document.querySelector("#loan-amount");
+    console.log(amount);
+    return true;
 }
 
 // Get the current values from the UI
